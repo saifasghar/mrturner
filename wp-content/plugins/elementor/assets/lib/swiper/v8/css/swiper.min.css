@@ -19,7 +19,8 @@
 :root {
   --swiper-theme-color: #007aff;
 }
-.swiper {
+.swiper,
+.swiper-2 {
   margin-left: auto;
   margin-right: auto;
   position: relative;
