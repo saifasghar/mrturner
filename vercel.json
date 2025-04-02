@@ -1,18 +1,13 @@
 {
     "version": 2,
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/$1",
-            "headers": {
-                "X-Frame-Options": "ALLOW"
-            }
-        }
-    ],
     "headers": [
         {
             "source": "/(.*)",
             "headers": [
+                {
+                    "key": "X-Frame-Options",
+                    "value": "ALLOW"
+                },
                 {
                     "key": "X-Robots-Tag",
                     "value": "index, follow"
